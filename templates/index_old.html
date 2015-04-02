@@ -1,0 +1,135 @@
+{%extends base.html%}
+{%block head%}
+
+{%end%}
+
+{%block content%}
+
+
+		  <hr>
+
+		  	<div class="row">
+		  		<div class="col-md-6" html="true">
+		  			<h1 style="margin-bottom:0px;"><a href="/introduction/"><strong>LASER</strong></a></h1><h3 style="margin-top:0px;">The <strong>L</strong>earning <strong>A</strong>ssisted <strong>S</strong>train <strong>E</strong>nginee<strong>R</strong>ing database</h3></h1><br />
+		  			<p>Welcome to the LASER database website. Our goal is to catalog all known metabolic engineering strategies currently used to develop microbial strains for the production of valuable metabolites. The database currently contains data from over 200 papers using <i>Escherichia coli</i> as a chassis organism, and studies using <i>Saccharomyces cerevisiae</i> are rapidly being incorporated as well. Each database record contains information concerning the design, implementation, and result (product titer, yield) obtained from a given strain design. In the future, this curated database will be used to implement algorithmic approaches to strain engineering that combine human intuition, metabolic modeling, and random approaches to propose metabolic engineering interventions.
+						</p>
+					</div>
+		  		<div class="col-md-6" style="margin-top:30px;">
+		  			<div class="row">
+		  				<div class="col-sm-4"></div>
+		  				<div class="col-sm-4">
+		  					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  						 width="145.197px" height="154.491px" viewBox="0 0 145.197 154.491" enable-background="new 0 0 145.197 154.491"
+		  						 xml:space="preserve">
+		  					<a class="btn" xlink:href="/build/"><circle fill="#6E2405" stroke="#6E2405" stroke-width="3" cx="71.32" cy="80.127" r="39.053"/></a>
+		  					<a xlink:href="/build/" class="btn"><text transform="matrix(1 0 0 1 50.2021 83.8335)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">Build</text></a>
+		  					<polygon fill="#B58574" stroke="#B58574" stroke-width="3" points="64.132,41.851 64.132,33.666 71.22,37.757 78.308,41.851
+		  						71.22,45.943 64.132,50.035 "/>
+		  					<polygon fill="#B58574" stroke="#B58574" stroke-width="3" points="76.485,118.004 76.485,109.819 69.396,113.912 62.308,118.004
+		  						69.396,122.097 76.485,126.189 "/>
+		  					<path fill="none" stroke="#B58574" stroke-width="3" d="M71.091,41.234c21.569,0,39.054,17.485,39.054,39.053
+		  						c0,21.569-17.484,39.054-39.054,39.054c-21.567,0-39.053-17.484-39.053-39.054"/>
+		  					<polygon fill="#B58574" stroke="#B58574" stroke-width="3" points="109.426,73.815 101.241,73.815 105.333,80.904 109.426,87.992
+		  						113.519,80.904 117.611,73.815 "/>
+		  					<circle fill="#B58574" stroke="#B58574" stroke-width="3" cx="32.167" cy="80.287" r="6.59"/>
+		  					<text transform="matrix(1 0 0 1 56.1016 27.936)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Pathway</text>
+		  					<text transform="matrix(1 0 0 1 0 77.6509)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Design</tspan><tspan x="0" y="8.201" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343"> Space</tspan></text>
+		  					<text transform="matrix(1 0 0 1 120.0254 79.9126)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Chassis</text>
+		  					<text transform="matrix(1 0 0 1 45.0259 151.4829)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Path into Chassis</text>
+		  					<text transform="matrix(1 0 0 1 126.9033 69.4224)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">2</text>
+		  					<text transform="matrix(1 0 0 1 68.0513 143.5796)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">3</text>
+		  					<text transform="matrix(1 0 0 1 6.166 69.4224)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">4</text>
+		  					<text transform="matrix(1 0 0 1 55.1362 93.5591)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">10</tspan><tspan x="8.643" y="-2.928" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="4.8817">5</tspan><tspan x="11.729" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">/week</tspan></text>
+		  					<text transform="matrix(1 0 0 1 62.8833 15.1396)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">1</text>
+		  					</svg>
+		  				</div>
+		  				<div class="col-sm-4"></div>
+		  			</div>
+		  			<div class="row">
+		  				<div class="col-sm-4">
+		  					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  						 width="136.357px" height="155.481px" viewBox="0 0 136.357 155.481" enable-background="new 0 0 136.357 155.481"
+		  						 xml:space="preserve">
+		  					<a xlink:href="/design/info/" class="btn"><circle fill="#7F8959" cx="70.898" cy="79.378" r="39.053"/></a>
+		  					<path fill="#7F8959" stroke="#7F8959" stroke-width="3" d="M68.784,40.314"/>
+		  					<polygon fill="#BFC4A9" points="64.265,40.93 64.265,32.746 71.353,36.837 78.441,40.93 71.353,45.023 64.265,49.115 "/>
+		  					<polygon fill="#BFC4A9" points="76.617,117.083 76.617,108.899 69.529,112.991 62.441,117.083 69.529,121.176 76.617,125.269 "/>
+		  					<path fill="none" stroke="#BFC4A9" stroke-width="4" d="M71.225,40.314c21.568,0,39.053,17.484,39.053,39.053
+		  						S92.792,118.42,71.225,118.42c-21.569,0-39.053-17.485-39.053-39.054"/>
+		  					<polygon fill="#BFC4A9" points="109.559,72.895 101.374,72.895 105.466,79.983 109.559,87.072 113.651,79.983 117.743,72.895 "/>
+		  					<circle fill="#BFC4A9" cx="32.3" cy="79.367" r="6.59"/>
+		  					<a xlink:href="/design/info/" class="btn"><text transform="matrix(1 0 0 1 41.4707 83.083)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">Design</text></a>
+		  					<text transform="matrix(1 0 0 1 56.1016 28.9277)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Discover</text>
+		  					<text transform="matrix(1 0 0 1 0 78.6421)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Design</tspan><tspan x="0" y="8.201" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343"> Space</tspan></text>
+		  					<text transform="matrix(1 0 0 1 120.0254 80.9038)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Rank</text>
+		  					<text transform="matrix(1 0 0 1 61.0508 152.4741)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Chassis</text>
+		  					<text transform="matrix(1 0 0 1 63.9263 15.1396)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">1</text>
+		  					<text transform="matrix(1 0 0 1 122.5107 70.4141)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">2</text>
+		  					<text transform="matrix(1 0 0 1 68.0527 144.5708)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">3</text>
+		  					<text transform="matrix(1 0 0 1 6.167 70.4141)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">4</text>
+		  					<text transform="matrix(1 0 0 1 53.6719 94.5513)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">10</tspan><tspan x="8.643" y="-2.929" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="4.8817">10</tspan><tspan x="14.816" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">/week</tspan></text>
+		  					</svg>
+		  				</div>
+		  				<div class="col-sm-4"></div>
+		  				<div class="col-sm-4">
+		  					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  						 width="141.543px" height="155.481px" viewBox="0 0 141.543 155.481" enable-background="new 0 0 141.543 155.481"
+		  						 xml:space="preserve">
+		  					<a xlink:href="/test/info/" class="btn"><circle fill="#C8B570" stroke="#C8B570" stroke-width="3" cx="67.933" cy="76.853" r="39.053"/></a>
+		  					<a xlink:href="/test/info/" class="btn"><text transform="matrix(1 0 0 1 49.7144 80.5581)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">Test</text></a>
+		  					<polygon fill="#EFE4BF" stroke="#EFE4BF" stroke-width="4" points="61.116,38.184 61.116,30 68.204,34.092 75.293,38.184
+		  						68.204,42.277 61.116,46.37 "/>
+		  					<polygon fill="#EFE4BF" stroke="#EFE4BF" stroke-width="4" points="73.47,114.338 73.47,106.154 66.381,110.246 59.293,114.338
+		  						66.381,118.431 73.47,122.523 "/>
+		  					<path fill="none" stroke="#EFE4BF" stroke-width="4" d="M68.076,37.568c21.568,0,39.053,17.485,39.053,39.054
+		  						s-17.484,39.053-39.053,39.053S29.022,98.19,29.022,76.622"/>
+		  					<polygon fill="#EFE4BF" stroke="#EFE4BF" stroke-width="4" points="106.41,70.149 98.226,70.149 102.318,77.238 106.41,84.327
+		  						110.504,77.238 114.596,70.149 "/>
+		  					<circle fill="#EFE4BF" stroke="#EFE4BF" stroke-width="4" cx="29.151" cy="76.622" r="6.59"/>
+		  					<text transform="matrix(1 0 0 1 52.6855 25.5103)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Separate</text>
+		  					<text transform="matrix(1 0 0 1 0 78.6431)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Learn</text>
+		  					<text transform="matrix(1 0 0 1 116.6084 80.9038)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Identify</text>
+		  					<text transform="matrix(1 0 0 1 57.6333 152.4741)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Quantify</text>
+		  					<text transform="matrix(1 0 0 1 60.5103 15.1396)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">1</text>
+		  					<text transform="matrix(1 0 0 1 122.5107 70.4146)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">2</text>
+		  					<text transform="matrix(1 0 0 1 64.6367 144.5708)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">3</text>
+		  					<text transform="matrix(1 0 0 1 2.75 70.4146)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">4</text>
+		  					<text transform="matrix(1 0 0 1 53.1841 94.5513)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">10</tspan><tspan x="8.642" y="-2.93" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="4.8817">5</tspan><tspan x="11.73" y="0" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">/week</tspan></text>
+		  					</svg>
+		  				</div>
+		  			</div>
+		  			<div class="row">
+		  				<div class="col-sm-4"></div>
+		  				<div class="col-sm-4">
+		  					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  						 width="144.076px" height="153.075px" viewBox="0 0 144.076 153.075" enable-background="new 0 0 144.076 153.075"
+		  						 xml:space="preserve">
+		  					<a xlink:href="/forge/info/" class="btn"><circle fill="#0B3543" stroke="#0B3543" stroke-width="3" cx="68.977" cy="76.579" r="39.053"/></a>
+		  					<a xlink:href="/forge/info/" class="btn"><text transform="matrix(1 0 0 1 43.9526 71.4966)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="14.645">FORGE</text></a>
+		  					<path fill="none" stroke="#7895A3" stroke-width="3" d="M69.236,37.685c21.568,0,39.054,17.485,39.054,39.053
+		  						c0,21.569-17.485,39.054-39.054,39.054S30.183,98.307,30.183,76.738"/>
+		  					<polygon fill="#7895A3" stroke="#7895A3" stroke-width="3" points="107.083,70.266 98.898,70.266 102.99,77.355 107.083,84.443
+		  						111.175,77.355 115.267,70.266 "/>
+		  					<circle fill="#7895A3" stroke="#7895A3" stroke-width="3" cx="29.823" cy="76.738" r="6.59"/>
+		  					<polygon fill="#7895A3" stroke="#7895A3" stroke-width="3" points="74.141,114.456 74.141,106.27 67.052,110.363 59.964,114.456
+		  						67.052,118.547 74.141,122.64 "/>
+		  					<polygon fill="#7895A3" stroke="#7895A3" stroke-width="3" points="61.789,38.301 61.789,30.117 68.876,34.208 75.964,38.301
+		  						68.876,42.394 61.789,46.486 "/>
+		  					<a xlink:href="/forge/info/" class="btn"><text transform="matrix(1 0 0 1 40.0474 86.2183)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="14.645">pipeline</text></a>
+		  					<text transform="matrix(1 0 0 1 52.6851 25.5098)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343"> Predict</text>
+		  					<text transform="matrix(1 0 0 1 0 83.5239)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Learn</text>
+		  					<text transform="matrix(1 0 0 1 116.6079 85.7856)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Refactor</text>
+		  					<text transform="matrix(1 0 0 1 60.5093 15.1396)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">1</text>
+		  					<text transform="matrix(1 0 0 1 122.5103 75.2964)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">2</text>
+		  					<text transform="matrix(1 0 0 1 64.6343 140.6655)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">3</text>
+		  					<text transform="matrix(1 0 0 1 2.7495 75.2964)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="17.574">4</text>
+		  					<text transform="matrix(1 0 0 1 56.6011 96.5034)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">1/week</text>
+		  					<text transform="matrix(1 0 0 1 61.6616 150.0679)" fill="#FFFFFF" font-family="'LucidaSansUnicode'" font-size="6.8343">Track</text>
+		  					</svg>
+		  				</div>
+		  				<div class="col-sm-4"></div>
+		  			</div>
+		  		</div>
+		  	</div>
+
+{%end%}

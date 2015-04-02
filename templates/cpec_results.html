@@ -1,0 +1,31 @@
+{% extends base_workflow.html %}
+{%block head%}
+<script type="text/javascript">
+
+
+
+function divhide(b) {
+    document.getElementById("oligos").hidden = b;
+}
+
+
+
+
+</script>
+{%end%}
+
+{% block content2%}
+<div class="row" style="padding-top:30px;margin:0 0 0 0;">
+    <div class="col-lg-8">
+        <h1 style="margin-bottom:30px">Assembly Designer</h1>
+        <a href="javascript:divhide(false)">Show Sequences</a> | <a href="javascript:divhide(true)">Hide Sequences</a>
+        <div style="margin-top:30px" id="oligos" hidden="true">
+        {% raw fwd_seqs %}
+        {% raw rev_seqs %}
+        {% raw melting_temps %}
+        </div>
+    </div>
+</div>
+
+
+{%end%}

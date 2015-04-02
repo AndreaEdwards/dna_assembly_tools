@@ -1,0 +1,112 @@
+{% extends base_workflow.html %}
+{%block head%}
+
+<script type="text/javascript">
+
+function divhide(b) {
+    document.getElementById("oligos").hidden = b;
+}
+
+var ran = false;
+var copied = false;
+
+var sequenceEntries = ["Name",
+            "Sequence",
+            "Genbank File (.gb)",
+            "Upstream Feature",
+            "Downstream Feature"];
+
+var getsUniqueRow = [1,1,0,0,0];
+
+var isTextSeq = [0,1,0,0,0];
+
+var isFile   = [0,0,1,0,0];
+
+var isRequired  = [1,0,0,0,0];
+
+function generateSequenceForms(location)
+{
+  var numSequences = document.getElementById("sequences").value;
+
+  //prevents further changes to mutant count (refresh the page if you mess up)
+
+  if(ran == true)
+    return;
+
+  if(numSequences > 0)
+  {
+    document.getElementById("sequences").readOnly = true;
+    for(j = 1; j <= numSequences; j++)
+    {
+      var mutantDiv = document.createElement('div');
+
+      mutantDiv.innerHTML += "<row class=\"col-lg-12\" style=\"margin:0px\"><h4 style=\"margin-top:35px\">Sequence " + j + "</h4></row>";
+
+      for(i = 0; i < sequenceEntries.length; i++)
+      {
+        var seqNum = j;
+
+        var seqName =  seqNum + "-" + sequenceEntries[i];
+
+        var label = "<label style = \"display:inline-block; margin-right:15px\" for = \"" + seqNum + "\">" + sequenceEntries[i] + ": </label>";
+        var input = "";
+
+
+        if(isFile[i] == 1)
+        {
+          input = "<input style = \"display:inline-block\" size = \"50\" type = \"file\" id = \"" + seqNum + "\" name =\"" + seqNum + "\" required>";
+        }
+        else if(isTextSeq[i] == 1)
+        {
+          input = "<textarea style = \"display:inline-block; color:black; \" cols = \"100\" rows = \"10\" type = \"text\" id = \"" + seqNum + "\" name =\"" + seqName + "\" required>";
+        }
+        else
+        {
+          input = "<input style = \"display:inline-block; color:black\" size = \"10\" type = \"text\" id = \"" + seqNum + "\" name =\"" + seqName + "\" required>";
+        }
+
+        if(!isRequired[i])
+          input = input.replace("required","");
+
+        if(getsUniqueRow[i] == 1)
+        {
+          mutantDiv.innerHTML += "<row class=\"col-lg-12\" style=\"margin-bottom:30px\">" + (label + input) ;
+        }
+        else
+        {
+          mutantDiv.innerHTML += "<row class=\"col-lg-4\">" + (label + input) ;
+        }
+
+      }
+
+      if(j == numSequences)
+      {
+        mutantDiv.innerHTML += "<row class=\"col-lg-12\" style=\"margin:30px 0 0 0\"><button class=\"btn btn-success\" type =\"submit\" name=\"copy\" value=\"upload\">Get Oligos</button></row>";
+      }
+      document.getElementById(location).appendChild(mutantDiv);
+    }
+    ran = true;
+  }
+  else
+    alert('Please enter appropriate sequence information.');
+}
+
+</script>
+{%end%}
+
+{% block content2%}
+
+<div class="row" style="padding-top:30px;margin:0 0 0 0;">
+    <div class="col-lg-12">
+        <h1>Assembly Designer</h1>
+        <form enctype="multipart/form-data" action="/upload/" method="post">
+            <div id="staticEntries">
+              <label for = "sequences" style="margin-right:20px">Number of Sequences</label><input type = "number" size = "50" id = "sequences" name = "sequences" oninput="generateSequenceForms('dynamicEntries')" style="color: black">
+            </div>
+            <div class="col-lg-10" style="padding-top:20px" id = "dynamicEntries">
+            </div>
+        </form>
+    </div>
+</div>
+
+{%end%}

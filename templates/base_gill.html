@@ -1,0 +1,22 @@
+{%extends base.html%}
+{% block content %}
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand" style="margin:20px 0 20px 20px;"><a href="#" id="forge_circle"></a>
+            </li>
+            <li><a href="/assembly_designer/">Assembly Designer</a>
+            </li>
+            <li><a href="/introduction/">Engineering Database</a>
+            </li>
+        </ul>
+    </div
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        {% block content3 %} {%end%}
+    </div>
+</div>
+
+{%end%}

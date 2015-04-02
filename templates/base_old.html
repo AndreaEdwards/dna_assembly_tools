@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>LASER Database</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/js/jquery-1.11.0.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script>$(function ()
+            { $("[data-toggle='popover']").popover();
+            });
+        </script>
+        <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.dropdown-toggle').dropdown();
+                });
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/static/js/bootstrap.min.js"></script>
+
+
+        {%block head%}  {%end%}
+    </head>
+
+    <body>
+        <header class="navbar-inverse" role="banner">
+            <nav role="navigation">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <a class="navbar-brand laser_logo" href="/" style="margin-right:40px;"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right" style="margin-top:15px;">
+                    <li><a href="/introduction/" class="btn" style="font-size: 18px; color:white;">LASER Database</a></li>
+                    <li><a href="/assembly_designer/" class="btn" style="font-size: 18px; color:white;">Assembly Designer</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            </div>
+        </header>
+
+        {% block content %} {%end%}
+
+        {%block footer%} {%end%}
+        <footer style="padding-top:50px;">
+          <p>&copy; The LASER Project 2015</p>
+        </footer>
+
+    </body>
+</html>
